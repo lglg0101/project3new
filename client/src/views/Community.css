@@ -1,0 +1,76 @@
+.communityContainer {
+font-family: monospace;
+display: flex; 
+width: 100vw;
+flex-direction: column;
+justify-content: space-between;
+}
+
+.contentContainer{
+display: flex; 
+flex-wrap: nowrap;
+flex-direction: row;
+justify-content: space-around;
+width: 100vw;
+}
+
+@media (max-width: 768px) {
+  .contentContainer {
+    width: 100%;
+  }
+  .communityContainer {
+    width: 100%;
+  }
+}
+
+.messageBoardHeader { 
+display: flex;
+flex-direction: column;
+justify-content: center;
+text-align: center;
+background: yellow;
+}
+
+.reviewHeader {
+display: flex;
+flex-direction: column;
+justify-content: center;
+text-align: center;
+background: aqua;
+}
+
+.pDescription {
+  display: flex;
+  color: white;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.postContainer {
+  display: flex;
+    flex-direction: column;
+    background: #00f;
+    margin: 2em;
+    width: 70vw;
+}
+
+.reviewContainer { 
+  display: flex;
+  flex-direction: column;
+  background: red;
+  width: 70vw;
+  margin: 2em;
+}
+
+.communityHeader {
+  width: 100vw;
+  display: flex;
+}
+.communityHeaderImg {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  width: 30em;
+  height: 20em;
+}

@@ -1,0 +1,186 @@
+.profile {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  // border: 3px solid yellowgreen
+}
+
+.profileContainer {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+  // border: 5px solid purple
+}
+
+.userInfo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 1em;
+  border: 4px black solid;
+  // padding: 2em;
+  // border: 2px solid blue;
+}
+
+.contentDisplay {
+  // border: 5px solid green;
+  background: blue;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.title {
+  // border: 2px solid orange;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  // font-family: 'Libre Barcode 39 Extended Text', cursive;
+  // font-family: 'Permanent Marker', cursive;
+  // font-family: 'Bangers', cursive;
+  font-family: "Fugaz One", cursive;
+  color: red;
+  font-size: 6em;
+  text-transform: uppercase;
+}
+
+.profilePic {
+  display: flex;
+  justify-content: center;
+  width: 20%;
+  height: 40%;
+  border: 4px solid yellow;
+  margin: 2em;
+}
+
+.shopLink {
+  display: flex;
+  justify-content: center;
+  font-family: monospace;
+  // background: black;
+  color: black;
+  font-size: 15px;
+  text-align: center;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+.userPosts {
+  display: flex;
+  background-color: blue;
+}
+
+.bioContainer {
+  border: 10px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(
+    121deg,
+    rgba(255, 0, 200, 1),
+    rgba(18, 233, 166, 1)
+  );
+  display: flex;
+  justify-content: center;
+  margin-top: 2em;
+  width: 40em;
+  height: 10em;
+  text-align: center;
+  background: black;
+  padding: 2em;
+}
+
+.bioContainer h1 {
+  display: flex;
+  color: white;
+  font-family: monospace;
+  font-size: 15px;
+}
+
+.allOfShop {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.shopPic {
+  display: flex;
+  width: 13em;
+  height: 13em;
+  border: 3px solid red;
+  margin: 1em;
+}
+
+.shopInfo p {
+  display: flex;
+  font-size: 15px;
+  background-color: black;
+  color: white;
+  font-family: monospace;
+}
+
+.shopInfo h1 {
+  font-size: 20px;
+  background-color: yellow;
+  color: black;
+  font-family: monospace;
+}
+
+.shopInfo {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1em;
+}
+
+.createReview {
+  display: flex;
+  justify-content: start;
+  margin: auto 0;
+}
+
+.ReviewsAndPosts {
+  display: flex;
+  flex-direction: row;
+  margin: 2em;
+  width: 100%;
+}
+
+.PostsStore,
+.ReviewsCreateAndPosted {
+  display: flex;
+  min-width: 50%;
+  width: fit-content;
+}
+
+.PostsStore {
+  border: 3px red solid;
+  background-color: blue;
+}
+
+.ReviewsCreateAndPosted {
+  flex-direction: column;
+  border: 3px solid blue;
+  background-color: red;
+  justify-content: center;
+}
+
+.cityContainer {
+  margin: 1em;
+  background-color: black;
+  padding: 0.5em;
+  width: 10em;
+}
+
+.cityContainer h1 {
+  color: white;
+  font-family: monospace;
+  font-size: 1em;
+  text-align: center;
+}
+
+.createReview {
+  display: flex;
+}

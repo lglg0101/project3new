@@ -1,0 +1,17 @@
+.footer {
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	background: aqua;
+	margin-top: 1em;
+	font-family: 'Rubik Mono One', sans-serif;
+	text-align: center;
+	color: blue;
+}
+
+.footer p {
+	// background: aqua;
+	text-align: center;
+	font-size: 1em;
+}

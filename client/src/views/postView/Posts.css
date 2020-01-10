@@ -1,0 +1,89 @@
+main{ 
+  margin-top: 2em;
+  width: 50em;
+}
+
+form {
+  width: 100vh;
+}
+
+.createLink {
+  background: black;
+  color: white;
+  width: 5em;
+}
+
+textarea {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 32.5em;
+  height: 10em;
+  font-size: 20px;
+}
+
+
+.postListContainer { 
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+
+.postsContainer{
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+  text-align: center;
+}
+
+
+.postImg { 
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 2em;
+  margin-top: 2em;
+  width: 20em;
+  border: 3px solid red;
+}
+
+.postH1 {
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  color:white;
+  font-size: 1.5em;
+}
+
+.postP {
+  text-align: center;
+  display: flex;
+  color: white;
+  font-size: 2em;
+
+}
+
+.postColor {
+  text-align: center;
+  color: yellow;
+  font-size: 2em;
+
+}
+
+
+.postLink { 
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.createdAt{
+  text-align: center;
+  color: black;
+  font-size: 1em;
+  margin-bottom: 1em;
+}

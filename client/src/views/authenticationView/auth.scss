@@ -1,0 +1,197 @@
+.Login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("./../../images/metallic.jpg");
+  background-size: cover;
+  height: 100vh;
+}
+
+.LoginFormDiv {
+  display: flex;
+  width: 10em;
+}
+.Loginform input {
+  font-family: monospace;
+  font-size: 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 2em 3em;
+  /* border: 2px green solid; */
+}
+
+// .Loginform button {
+// 	font-family: monospace;
+// 	background: black;
+// 	color: white;
+// 	font-size: 15px;
+// 	margin-top: 1em;
+// 	padding: 0.5em;
+// 	display: flex;
+// 	align-self: center;
+// }
+
+.SignUp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("./../../images/metallic.jpg");
+  background-size: cover;
+  background-repeat: repeat;
+  height: 100vh;
+}
+
+.SignUpForm{
+width: 50vw;
+}
+
+.SignUpFormDiv {
+  display: flex;
+	justify-content: center;
+	
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 5em;
+}
+
+.SignUpForm input {
+  display: flex;
+  font-family: monospace;
+  font-size: 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5em 3em;
+}
+
+button.myButton {
+  font-weight: bold;
+  padding: 1em;
+  margin-top: 1em;
+  background-color: blue;
+  width: 18.5em;
+  font-family: monospace;
+  font-size: 17px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.SignUpForm label {
+  padding: 0.5em;
+  font-weight: bold;
+  margin-top: 1em;
+  background: black;
+  color: white;
+  font-family: monospace;
+  font-size: 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="checkbox"] {
+	
+  transform: scale(3);
+  display: flex;
+  margin: 2.2em;
+}
+
+.shopGreeting {
+  font-weight: bold;
+  background: white;
+  color: blue;
+  width: 100vh;
+  padding: 1em;
+  font-family: monospace;
+  font-size: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.myButton {
+  display: flex;
+  box-shadow: 2px 4px 5px -1px #eb007d;
+  // background: linear-gradient(to bottom, #eeff00 5%, #eb1a1a 100%);
+  // background-color: #eeff00;
+  background: black;
+  border-radius: 10px;
+  border: 3px solid #ffffff;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: "Press Start 2P", cursive;
+  font-size: 15px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 12px 20px;
+  // margin: 0;
+  text-decoration: none;
+  text-shadow: 3px 4px 0px purple;
+  // #ff6e6e;
+}
+.myButton:hover {
+  background: rgb(170, 128, 176);
+  background: linear-gradient(
+    121deg,
+    rgba(170, 128, 176, 1) 0%,
+    rgba(204, 11, 233, 1) 9%,
+    rgba(18, 233, 166, 1) 36%,
+    rgba(33, 0, 255, 1) 47%
+  );
+  // background: linear-gradient(to bottom, #03fa28 5%, #0022ff 100%);
+  // background-color: #03fa28;
+  // background-color: yellow;
+}
+
+.myButton:active {
+  position: relative;
+  top: 1px;
+}
+
+.shopFormContainer {
+  background: url("./../../images/floppydisk.png");
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.shopFormPlaceholder {
+  display: flex;
+  margin-left: 10em;
+  width: 50vh;
+}
+
+.autocomplete {
+  display: flex;
+  width: 40em;
+  color: black;
+}
+
+.checkBox{
+	display: flex;
+	flex-direction: row;
+}
+
+.checkBox label{
+	width: 50em;
+
+}
+
+.bio{
+	width:50vw;
+}
+
+.centerButton{
+  display: flex;
+  // flex-direction: row;
+  // text-align: center;
+	justify-content: center;
+}

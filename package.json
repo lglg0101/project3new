@@ -1,0 +1,51 @@
+{
+  "name": "project-3",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./server",
+    "dev": "nodemon ./server",
+    "dev:debug": "DEBUG=project-3* npm run dev",
+    "lint": "eslint .",
+    "prepare": "cd client && npm install && npm run build && cd .."
+  },
+  "dependencies": {
+    "axios": "^0.19.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cloudinary": "^1.18.1",
+    "connect-mongo": "^3.2.0",
+    "cookie-parser": "^1.4.4",
+    "debug": "^4.1.1",
+    "dotenv": "^8.1.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "google-maps-react": "^2.0.2",
+    "http-errors": "^1.7.3",
+    "mongodb": "^3.4.0",
+    "mongoose": "^5.6.13",
+    "morgan": "^1.9.1",
+    "multer": "^1.4.2",
+    "multer-storage-cloudinary": "^2.2.1",
+    "node-sass": "^4.13.0",
+    "nodemailer": "^6.4.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-rating": "^2.0.3",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "^3.3.0",
+    "serve-favicon": "^2.5.0"
+  },
+  "devDependencies": {
+    "mocha": "^6.2.0",
+    "nodemon": "^1.19.2",
+    "eslint": "^6.3.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-config-prettier": "^6.3.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "prettier": "^1.18.2",
+    "@ironh/eslint-config": "^0.0.2"
+  }
+}

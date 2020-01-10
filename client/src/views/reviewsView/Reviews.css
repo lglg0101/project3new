@@ -1,0 +1,129 @@
+.reviewForm {
+  background: yellow;
+  width: 100%;
+}
+
+.linkReview {
+  text-transform: uppercase;
+}
+
+.reviewListContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+.reviewImg {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 2em;
+  margin-top: 2em;
+  width: 20em;
+  border: 3px solid white;
+}
+
+.reviewH1 {
+  color: black;
+  font-size: 1.5em;
+}
+
+.reviewP {
+  color: white;
+  font-size: 2em;
+}
+
+.ReviewSingleView {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: 3px yellow solid;
+  margin-top: 4em;
+  padding: 1em;
+  width: 100%;
+  background: red;
+}
+
+.ReviewSingleView img {
+  display: flex;
+  width: 20em;
+  height: 20em;
+}
+
+.mainSingleView {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.reviewDelete {
+  display: flex;
+  justify-content: center;
+}
+.createdAt {
+  color: black;
+  font-size: 1em;
+  margin-bottom: 3em;
+}
+
+.reviewColor {
+  color: white;
+  font-size: 1em;
+}
+
+.reviewColorUser{
+  color: yellow;
+  font-size: 2em;
+}
+
+.EditReviews {
+  padding: 0.5em;
+}
+
+.EditReviewsp {
+  margin-top: 1em;
+  font-family: monospace;
+  font-size: 15px;
+  color: blue;
+  font-weight: 600;
+}
+
+.ReviewSingleView p {
+  color: white;
+  font-family: monospace;
+  font-size: 20px;
+}
+
+.ReviewBtn {
+  background-color: black;
+  color: white;
+  font-family: monospace;
+  width: 10em;
+  display: flex;
+  padding: 1em;
+}
+
+.reviewFormContainer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.reviewFormContainer textarea {
+  width: 100%;
+  font-family: monospace;
+}
+
+.oneReview,
+.oneReviewText {
+  width: 100%;
+}
+
+.oneReviewText {
+  /* border: 3px solid white; */
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}

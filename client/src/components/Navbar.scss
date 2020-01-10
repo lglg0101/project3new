@@ -1,0 +1,38 @@
+.navBar {
+	background: yellow;
+	border: 3px solid red;
+	display: flex;
+	justify-content: space-between;
+	padding: 0.2em;
+	width: 100vw;
+}
+
+.HomeLink {
+	display: flex;
+	font-family: 'Fugaz One', cursive;
+	color: blue;
+	font-size: 3em;
+}
+
+.NavContainer {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.NavIcons img {
+	width: 1.5em;
+	height: 1.5em;
+}
+
+.NavIcons{
+	display: flex;
+	justify-content: space-evenly;
+	width: 15em;
+	padding-top: 1em;
+}
+
+.signoutBtn {
+	border: 5px solid pink;
+
+}

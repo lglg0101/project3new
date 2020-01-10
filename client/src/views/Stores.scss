@@ -1,0 +1,46 @@
+.storesContainer {
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.storesheader {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.storesH1 {
+	font-family: 'Fugaz One', cursive;
+	font-size: 2em;
+	background: yellow;
+}
+
+.storesP {
+	display: flex;
+	justify-content: center;
+	background: black;
+	font-size: 1.2em;
+	color: white;
+	text-align: center;
+	font-family: monospace;
+}
+
+.map-container {
+	display: flex;
+	justify-content: center;
+}
+.mapbox {
+	display: flex;
+	margin: auto 0;
+	border: 6px solid fuchsia;
+}
+
+.storeClick{
+
+text-align: center;
+	margin: 1em;
+	font-family: monospace;
+	background-color: yellow;
+
+}
