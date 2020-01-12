@@ -85,15 +85,17 @@ export default class MapView extends Component {
 				<div className="map-container">
 
 
-			{this.state.loading && (<ReactLoading type={'balls'} color={"#0000FF"} height={100} width={100} />)}	
-
 					<div
 						className="mapbox"
 						ref={this.mapRef}
 						style={{ height: 400, width: 700 }}
 					/>
 				</div>
-				<h3 className="storeClick">Click On The Marker To Visit The Store Page</h3>
+				<h3 className="storeClick">
+				{this.state.loading && (<ReactLoading className="loading" type={'balls'} color={"#0000FF"} height={50} width={50} />)}	
+
+
+					Click On The Marker To Visit The Store Page</h3>
 			</div>
 		);
 	}
