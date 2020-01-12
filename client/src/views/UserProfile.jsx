@@ -60,7 +60,6 @@ export default class UserProfile extends Component {
 								{...this.props}
 								changeAuthenticationStatus={this.changeAuthenticationStatus}
 							/>{' '}
-							/>
 						</div>
 						<div className="profileContainer">
 							<div className="titleContainer">
