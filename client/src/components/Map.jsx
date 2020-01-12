@@ -42,9 +42,13 @@ export default class MapView extends Component {
 		if (this.state.shops){	
 		for (let i = 0; i < this.state.shops.length; i++) {
 			let popup = new mapboxgl.Popup().setHTML(
-				`<a class="linkClass" href="https://localhost:3000/stores/${this.state.shops[i]._id}"<b>${this.state.shops[i].shopName}</b> <br>
-        </a>
-      `
+				`<a class="linkClass" href="https://thriftpointapp.herokuapp.com/stores/${this.state.shops[i]._id}"<b>${this.state.shops[i].shopName}</b> <br>
+				</a>
+			  `
+
+	// 			`<a class="linkClass" href="https://localhost:3000/stores/${this.state.shops[i]._id}"<b>${this.state.shops[i].shopName}</b> <br>
+    //     </a>
+    //   `
 			);
 			let lng = this.state.shops[i].coordinates[0];
 			let lat = this.state.shops[i].coordinates[1];
