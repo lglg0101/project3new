@@ -18,7 +18,7 @@ export const shopInfo = async shop => {
   console.log("DATA IN SERVICE", data);
 
   try {
-    const response = await shopService.get(`/shops`, data);
+    const response = await shopService.post(`/shop-info`, data);
     // const response = await shopService.post(`/shop-info`, data);
     console.log("RESPONSE IN SERVICE", response.data);
     return response.data.shop;

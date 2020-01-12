@@ -145,7 +145,6 @@ export default class ShopProfile extends Component {
 
 							{/* <div className="reviewContainer">{/* <ReviewListView /> */}
 						</div>{' '}
-						*/}
 					</div>
 					// </div>
 				)}

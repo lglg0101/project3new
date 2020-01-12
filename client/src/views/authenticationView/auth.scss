@@ -21,17 +21,6 @@
   /* border: 2px green solid; */
 }
 
-// .Loginform button {
-// 	font-family: monospace;
-// 	background: black;
-// 	color: white;
-// 	font-size: 15px;
-// 	margin-top: 1em;
-// 	padding: 0.5em;
-// 	display: flex;
-// 	align-self: center;
-// }
-
 .SignUp {
   display: flex;
   justify-content: center;
@@ -118,8 +107,6 @@ input[type="checkbox"] {
 .myButton {
   display: flex;
   box-shadow: 2px 4px 5px -1px #eb007d;
-  // background: linear-gradient(to bottom, #eeff00 5%, #eb1a1a 100%);
-  // background-color: #eeff00;
   background: black;
   border-radius: 10px;
   border: 3px solid #ffffff;
@@ -194,4 +181,10 @@ input[type="checkbox"] {
   // flex-direction: row;
   // text-align: center;
 	justify-content: center;
+}
+
+.shopInfoBtn {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
 }
