@@ -39,7 +39,7 @@ class ReviewListView extends Component {
 							
 								<h2 className="reviewColorUser"> SHOP REVIEWED: {review._shop.shopName}</h2>
 					
-								<Rating/>
+								{/* <Rating/> */}
 								<div className="oneReview">
 								<div className="oneReviewText">
 								<h1 className="reviewH1">"{review.text}"</h1>

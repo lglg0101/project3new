@@ -37,12 +37,14 @@ export default class SingleStoreView extends Component {
 	}
 
 	async componentDidMount() {
-		// this.fetchData();
+		this.fetchData();
 		try {
 			const shop = await loadShopInfo(this.props.match.params.id);
 
 			this.setState({
-				shop: shop
+				shop: shop,
+		
+
 			});
 		} catch (error) {
 			console.log(error);
