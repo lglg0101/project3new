@@ -11,7 +11,6 @@ class ReviewCreateView extends Component {
       review: {
         text: "",
         _author: "",
-        // rating: '',
         image: ""
       }
     };

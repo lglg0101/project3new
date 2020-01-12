@@ -30,7 +30,6 @@ import MapView from "./components/Map";
 import Stores from "./views/Stores";
 import ShopInfo from "./views/authenticationView/ShopInfo";
 
-import Rating from "react-rating";
 import UserProfile from "./views/UserProfile";
 import ShopProfile from "./views/ShopProfile";
 
