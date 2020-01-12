@@ -27,8 +27,7 @@ const app = express();
 // //DEPLOYMENT//
 
 app.use(express.static(join(__dirname, "client/build")));
-
-// app.use(serveFavicon(join(__dirname, 'client/build/favicon')));
+// app.use(serveFavicon(join(__dirname, 'public', 'client/build/favicon')));
 
 app.use(logger("dev"));
 app.use(express.urlencoded({ extended: true }));
@@ -54,21 +53,21 @@ app.use(
 app.use(basicAuthenticationDeserializer);
 app.use(bindUserToViewLocals);
 
-app.use("/", indexRouter);
-app.use("/authentication", authenticationRouter);
-app.use("/post", postRouter);
-app.use("/review", reviewRouter);
-app.use("/userprofile", profileRouter);
-app.use("/shopprofile", shopRouter);
-app.use("/shops", shopInfo);
+// app.use("/", indexRouter);
+// app.use("/authentication", authenticationRouter);
+// app.use("/post", postRouter);
+// app.use("/review", reviewRouter);
+// app.use("/userprofile", profileRouter);
+// app.use("/shopprofile", shopRouter);
+// app.use("/shops", shopInfo);
 
-// app.use("/api", indexRouter);
-// app.use("/api/authentication", authenticationRouter);
-// app.use("/api/post", postRouter);
-// app.use("/api/review", reviewRouter);
-// app.use("/api/userprofile", profileRouter);
-// app.use("/api/shopprofile", shopRouter);
-// app.use("/api/shops", shopInfo);
+app.use("/api", indexRouter);
+app.use("/api/authentication", authenticationRouter);
+app.use("/api/post", postRouter);
+app.use("/api/review", reviewRouter);
+app.use("/api/userprofile", profileRouter);
+app.use("/api/shopprofile", shopRouter);
+app.use("/api/shops", shopInfo);
 
 // // Catch missing routes and forward to error handler
 //   next(createError(404));

@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import ReactLoading from 'react-loading';
+
 import { loadAllShops } from './../services/shops';
 import './../views/Stores.scss';
 // import api from "../../api";
@@ -14,7 +16,8 @@ export default class MapView extends Component {
 		this.state = {
 			lng: '',
 			lat: '',
-			shops: null
+			loading: true,
+			shops: []
 		};
 		this.getCurrentCoordinates = this.getCurrentCoordinates.bind(this);
 		this.initMap = this.initMap.bind(this);
@@ -22,6 +25,7 @@ export default class MapView extends Component {
 		this.map = null;
 		this.marker = null;
 	}
+
 	initMap(lng, lat) {
 		console.log('lng', lng, 'lat', lat);
 		this.map = new mapboxgl.Map({
@@ -31,9 +35,11 @@ export default class MapView extends Component {
 			zoom: 12
 		});
 		this.map.addControl(new mapboxgl.NavigationControl());
+
 		this.marker = new mapboxgl.Marker({ color: 'red' })
 			.setLngLat([lng, lat])
 			.addTo(this.map);
+		if (this.state.shops){	
 		for (let i = 0; i < this.state.shops.length; i++) {
 			let popup = new mapboxgl.Popup().setHTML(
 				`<a class="linkClass" href="https://localhost:3000/stores/${this.state.shops[i]._id}"<b>${this.state.shops[i].shopName}</b> <br>
@@ -50,6 +56,10 @@ export default class MapView extends Component {
 				.setPopup(popup)
 				.addTo(this.map);
 		}
+	}
+	this.setState({
+		loading: false
+	})
 	}
 
 	getCurrentCoordinates = () => {
@@ -73,6 +83,10 @@ export default class MapView extends Component {
 			<div className="Map">
 				<div className="map-header"></div>
 				<div className="map-container">
+
+
+			{this.state.loading && (<ReactLoading type={'balls'} color={"#0000FF"} height={100} width={100} />)}	
+
 					<div
 						className="mapbox"
 						ref={this.mapRef}
