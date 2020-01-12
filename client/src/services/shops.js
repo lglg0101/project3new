@@ -1,6 +1,6 @@
 import axios from "axios";
 const shopService = axios.create({
-  baseURL: "/shops"
+  baseURL: "/api/shops"
 });
 
 export const shopInfo = async shop => {

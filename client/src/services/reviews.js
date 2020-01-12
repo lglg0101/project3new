@@ -6,7 +6,7 @@ const apiService = axios.create({
   // baseURL: 'http://localhost:3020/api'
   // After proxying
   // baseURL: 'http://localhost:3000/api'
-  baseURL: "/review"
+  baseURL: "/api/review"
 });
 
 export const create = async (review, shopId ) => {

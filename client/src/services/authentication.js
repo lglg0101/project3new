@@ -1,6 +1,6 @@
 import axios from "axios";
 const apiAuthenticationService = axios.create({
-  baseURL: "/authentication"
+  baseURL: "/api/authentication"
 });
 export const signIn = async data => {
   try {
