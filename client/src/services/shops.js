@@ -4,7 +4,6 @@ const shopService = axios.create({
 });
 
 export const shopInfo = async shop => {
-  console.log("DATA ON SERVICE", shop);
   const data = new FormData();
   data.append("shopName", shop.shopName);
   data.append("telephone", shop.telephone);
@@ -14,7 +13,6 @@ export const shopInfo = async shop => {
   data.append("bio", shop.bio);
   data.append("lng", shop.coordinates[0]);
   data.append("lat", shop.coordinates[1]);
-
   console.log("DATA IN SERVICE", data);
 
   try {

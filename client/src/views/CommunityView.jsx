@@ -64,7 +64,7 @@ export class CommunityView extends Component {
 	// }
 
 	render() {
-		console.log('REVIEWS ON RENDER COMM VIEW', this.state.reviews);
+		console.log('REVIEWS ON RENDER COMMUNITY VIEW', this.state.reviews);
 		return (
 			<div className="communityContainer">
 				<div class="navBar">

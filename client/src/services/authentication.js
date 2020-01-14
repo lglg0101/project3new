@@ -21,7 +21,7 @@ export const signUp = async user => {
   data.append("image", user.image);
   data.append("bio", user.bio);
   data.append("password", user.password);
-  console.log("data before sending to route", data);
+  console.log("Data before sending to route", data);
   try {
     console.log("SERVICE");
     const response = await apiAuthenticationService.post(`/sign-up`, data);

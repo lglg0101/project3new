@@ -15,12 +15,10 @@ class PostCreateView extends Component {
 		this.handleInputChange = this.handleInputChange.bind(this);
 		this.handleFormSubmission = this.handleFormSubmission.bind(this);
 		this.handleFileChange = this.handleFileChange.bind(this);
-		//console.log(this.props);
 	}
 	handleInputChange(event) {
 		const name = event.target.name;
 		const value = event.target.value;
-		// console.log(name, value);
 		this.setState({
 			// [name]: value
 			post: {

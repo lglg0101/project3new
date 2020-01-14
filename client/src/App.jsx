@@ -53,9 +53,7 @@ class App extends Component {
   }
 
   async componentDidMount() {
-    console.log('Im component did mount and im running')
     try {
-      console.log('Im trying')
       const user = await loadUserInformationService();
       const shop = await shopInfoService();
       console.log('Here are the shops', shop)
@@ -88,7 +86,7 @@ class App extends Component {
   render() {
     const user = this.state.user;
     const shop = this.state.shop;
-    console.log("SHOP INFO", shop);
+    console.log("Here is shop info", shop);
 
     return (
       <div className="home">

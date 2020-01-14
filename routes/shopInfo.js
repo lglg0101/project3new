@@ -8,7 +8,6 @@ const routeGuard = require("./../middleware/route-guard");
 const uploader = require("../middleware/multer-configuration");
 
 router.post("/shop-info", uploader.single("image"), (req, res, next) => {
-  console.log("I AM ADDING A SHOP", req.body);
   const image = (req.file.url && req.file.url) || "";
   const {
     shopName,
