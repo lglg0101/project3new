@@ -88,7 +88,7 @@ class ReviewDeleteView extends Component {
             <button>Edit Review</button>
           </form>
         )}
-        <button onClick={this.onDeleteTrigger}>Delete Review</button>
+        {/* <button onClick={this.onDeleteTrigger}>Delete Review</button> */}
       </main>
     );
   }
